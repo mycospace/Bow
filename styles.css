@@ -1,48 +1,95 @@
+/* Grundlegendes Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background: linear-gradient(120deg, #f5f7fa, #c3cfe2);
     text-align: center;
 }
 
+/* Navigation */
 nav {
-    background-color: #333;
-    padding: 10px;
+    background: #2c3e50;
+    padding: 15px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-nav a {
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-links {
+    margin-top: 10px;
+}
+
+.nav-links a {
     color: white;
-    margin: 0 10px;
     text-decoration: none;
-    font-size: 16px;
+    margin: 10px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    font-size: 14px;
 }
 
+.nav-links a:hover {
+    background: #34495e;
+}
+
+/* Hauptinhalt */
 main {
-    max-width: 800px;
+    max-width: 900px;
     margin: 20px auto;
     padding: 20px;
     background: white;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
+/* Buttons */
 button {
-    background-color: #007BFF;
+    background-color: #2980b9;
     color: white;
-    padding: 10px;
+    padding: 12px 18px;
     border: none;
-    margin: 5px;
+    margin: 10px;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 16px;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #1f618d;
 }
 
+/* Textareas */
 textarea {
     width: 100%;
-    height: 100px;
+    height: 120px;
     margin: 10px 0;
-    padding: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    resize: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav-links a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    main {
+        width: 90%;
+    }
 }
