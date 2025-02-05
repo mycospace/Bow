@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaCognition Trainer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+    <!-- Navigation -->
+    <div id="nav-placeholder"></div>
+
+    <main>
+        <section class="intro">
+            <h1>Willkommen beim MetaCognition Trainer</h1>
+            <p>Erkenne und hinterfrage deine Denkmuster mit interaktiven Übungen.</p>
+        </section>
+
+        <section class="exercises">
+            <button onclick="loadExercise('innereDialoge')">Innere Dialoge</button>
+            <button onclick="loadExercise('perspektivwechsel')">Perspektivwechsel</button>
+            <button onclick="loadExercise('miniExperimente')">Mini-Experimente</button>
+            <button onclick="loadExercise('achtsamkeit')">Achtsamkeit</button>
+            <button onclick="loadExercise('selbstreflexion')">Selbstreflexion</button>
+            <button onclick="loadExercise('alltag')">Alltagsreflexion</button>
+        </section>
+
+        <div id="exercise-container"></div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script src="script.js"></script>
+    <script src="exercises.js"></script>
+
+</body>
+</html>
