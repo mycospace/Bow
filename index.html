@@ -9,31 +9,24 @@
 <body>
 
     <!-- Navigation -->
-    <div id="nav-placeholder"></div>
+    <nav>
+        <a href="#" onclick="loadExercise('home')">Home</a>
+        <a href="#" onclick="loadExercise('innereDialoge')">Innere Dialoge</a>
+        <a href="#" onclick="loadExercise('perspektivwechsel')">Perspektivwechsel</a>
+        <a href="#" onclick="loadExercise('miniExperimente')">Mini-Experimente</a>
+        <a href="#" onclick="loadExercise('achtsamkeit')">Achtsamkeit</a>
+        <a href="#" onclick="loadExercise('selbstreflexion')">Selbstreflexion</a>
+        <a href="#" onclick="loadExercise('alltag')">Alltagsreflexion</a>
+    </nav>
 
+    <!-- Hauptinhalt -->
     <main>
-        <section class="intro">
+        <section id="exercise-container">
             <h1>Willkommen beim MetaCognition Trainer</h1>
             <p>Erkenne und hinterfrage deine Denkmuster mit interaktiven Übungen.</p>
         </section>
-
-        <section class="exercises">
-            <button onclick="loadExercise('innereDialoge')">Innere Dialoge</button>
-            <button onclick="loadExercise('perspektivwechsel')">Perspektivwechsel</button>
-            <button onclick="loadExercise('miniExperimente')">Mini-Experimente</button>
-            <button onclick="loadExercise('achtsamkeit')">Achtsamkeit</button>
-            <button onclick="loadExercise('selbstreflexion')">Selbstreflexion</button>
-            <button onclick="loadExercise('alltag')">Alltagsreflexion</button>
-        </section>
-
-        <div id="exercise-container"></div>
     </main>
 
-    <!-- Footer -->
-    <div id="footer-placeholder"></div>
-
     <script src="script.js"></script>
-    <script src="exercises.js"></script>
-
 </body>
 </html>
